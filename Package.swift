@@ -1,4 +1,4 @@
-//
+// swift-tools-version:6.0
 //  Package.swift
 //
 //  Created by Usama Javed on 12/10/2025.
@@ -21,15 +21,19 @@ let package = Package(
         .library(
             name: "FloatingLabelTextField",
             targets: ["FloatingLabelTextField"]
-        ),
+        )
+    ],
+    dependencies: [
+        /// Add external package dependencies here if needed in future
     ],
     targets: [
         .target(
-            name: "FloatingLabelTextField"
+            name: "FloatingLabelTextField",
+            dependencies: []
         ),
         .testTarget(
             name: "FloatingLabelTextFieldTests",
             dependencies: ["FloatingLabelTextField"]
-        ),
+        )
     ]
 )
