@@ -47,6 +47,7 @@ You can add **FloatingLabelTextField** to your project in **two ways**:
    ]```
 
 
+
 ## 🚀 Usage
 
 ```swift
@@ -88,6 +89,7 @@ struct ContentView: View {
 ```
 
 
+
 ## ⚙️ Parameters
 
 | Parameter            | Type                           | Default             | Description                   |
@@ -118,6 +120,7 @@ Here’s how it looks with default values:
 ## 💡 Contributing
 Contributions, issues, and feature requests are welcome!
 If you use this library and like it, **don’t forget to star the repo** ⭐️. It helps the project grow and reach more developers.
+
 
 
 ## 📝 License
