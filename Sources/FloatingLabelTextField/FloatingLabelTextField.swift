@@ -1,6 +1,15 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
-
+//
+//  FloatingLabelTextField.swift
+//  FloatingLabelTextField
+//
+//  Created by Usama Javed on 12/10/2025.
+//
+//  A customizable SwiftUI text field with an outlined border and floating label.
+//  Supports secure input, keyboard customization, and flexible UI configuration.
+//
+//  License: MIT License
+//  Copyright © 2025 Usama Javed. All rights reserved.
+//
 
 import SwiftUI
 
@@ -12,6 +21,10 @@ public struct FloatingLabelTextField: View {
     public var isSecure: Bool
     public var keyboardType: UIKeyboardType
     public var autocapitalization: TextInputAutocapitalization?
+    public var height: CGFloat
+    public var cornerRadius: CGFloat
+    public var borderColor: Color
+    public var borderWidth: CGFloat
     
     public init(
         label: String,
@@ -19,7 +32,11 @@ public struct FloatingLabelTextField: View {
         placeholder: String? = nil,
         isSecure: Bool = false,
         keyboardType: UIKeyboardType = .default,
-        autocapitalization: TextInputAutocapitalization? = .sentences
+        autocapitalization: TextInputAutocapitalization? = .sentences,
+        height: CGFloat = 40,
+        cornerRadius: CGFloat = 6,
+        borderColor: Color = .primary,
+        borderWidth: CGFloat = 1
     ){
         self.label = label
         self._text = text
@@ -27,12 +44,16 @@ public struct FloatingLabelTextField: View {
         self.isSecure = isSecure
         self.keyboardType = keyboardType
         self.autocapitalization = autocapitalization
+        self.height = height
+        self.cornerRadius = cornerRadius
+        self.borderColor = borderColor
+        self.borderWidth = borderWidth
     }
     
     public var body: some View {
         ZStack(alignment: .leading){
-            RoundedRectangle(cornerRadius: 6, style: .continuous)
-                .stroke(Color.primary.opacity(0.9), lineWidth: 1)
+            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+                .stroke(borderColor.opacity(0.9), lineWidth: borderWidth)
                 .background(Color(UIColor.systemBackground))
             
             VStack(alignment: .leading, spacing: 0){
@@ -56,10 +77,10 @@ public struct FloatingLabelTextField: View {
                     }
                 }
                 .padding(.horizontal, 12)
-                .padding(.vertical, 10)
+                .padding(.vertical, 8)
             }
             .padding(.top, 6)
         }
-        .frame(minHeight: 48)
+        .frame(minHeight: height, maxHeight: height)
     }
 }

@@ -1,5 +1,14 @@
-// swift-tools-version: 6.2
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+//
+//  Package.swift
+//
+//  Created by Usama Javed on 12/10/2025.
+//
+//  Swift Package definition for FloatingLabelTextField.
+//  Provides an outlined SwiftUI text field with a floating label.
+//
+//  License: MIT License
+//  Copyright © 2025 Usama Javed. All rights reserved.
+//
 
 import PackageDescription
 
