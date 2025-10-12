@@ -5,6 +5,7 @@ This package provides a Material Design–inspired floating label input field fo
 
 ---
 
+
 ## ✨ Features
 
 - ✅ Floating label with customizable font and color  
@@ -19,6 +20,8 @@ This package provides a Material Design–inspired floating label input field fo
 - ✅ Swift Package Manager support  
 
 ---
+
+
 
 ## 📦 Installation
 
@@ -44,9 +47,11 @@ You can add **FloatingLabelTextField** to your project in **two ways**:
    ]
 ```
 
+
+
 ## 🚀 Usage
 
-   ```swift
+```swift
 import SwiftUI
 import FloatingLabelTextField
 
@@ -84,6 +89,7 @@ struct ContentView: View {
 }
 ```
 
+
 ## ⚙️ Parameters
 
 | Parameter            | Type                           | Default             | Description                   |
@@ -103,15 +109,18 @@ struct ContentView: View {
 | `textFont`           | `Font`                         | `.system(size: 16)` | Input text font               |
 
 
+
 ## 🛠️ Example Preview
 Here’s how it looks with default values:
 
 <img src="https://via.placeholder.com/500x150.png?text=FloatingLabelTextField+Preview" alt="Preview" width="500"/>
 
 
+
 ## 💡 Contributing
 Contributions, issues, and feature requests are welcome!
 If you use this library and like it, **don’t forget to star the repo** ⭐️. It helps the project grow and reach more developers.
+
 
 ## 📝 License
 FloatingLabelTextField is available under the MIT License.
