@@ -44,8 +44,8 @@ You can add **FloatingLabelTextField** to your project in **two ways**:
    ```swift
    dependencies: [
        .package(url: "https://github.com/devstacklimited/FloatingLabelTextField.git", from: "1.0.0")
-   ]```
-
+   ]
+   ```
 
 
 ## 🚀 Usage
