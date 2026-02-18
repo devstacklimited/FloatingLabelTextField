@@ -21,7 +21,8 @@ This package provides a Material Design–inspired floating label input field fo
 
 ---
 
-## 🖼 Screenshots
+## 🖼 Example Preview
+Here’s how it looks in the demo:
 
 <p float="left">
   <img src="Screenshots/username.png" width="200" />
@@ -114,13 +115,6 @@ struct ContentView: View {
 | `borderWidth`        | `CGFloat`                      | `1`                 | Border width                  |
 | `labelFont`          | `Font`                         | `.system(size: 12)` | Label font                    |
 | `textFont`           | `Font`                         | `.system(size: 16)` | Input text font               |
-
-
-
-## 🛠️ Example Preview
-Here’s how it looks with default values:
-
-<img src="https://via.placeholder.com/500x150.png?text=FloatingLabelTextField+Preview" alt="Preview" width="500"/>
 
 
 
